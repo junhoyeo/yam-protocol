@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'
+
 import PageHeader from '../../components/PageHeader'
 import Spacer from '../../components/Spacer'
 
@@ -63,7 +64,7 @@ const Home: React.FC = () => {
         subtitle="Burn V1 tokens before the deadline to receive V2 tokens."
         title="It's time to migrate to Yam V2!"
       />
-      
+
       <Container>
         <Button
           onClick={handleInstructionsClick}
@@ -102,12 +103,6 @@ const StyledOverview = styled.div`
 const StyledSpacer = styled.div`
   height: ${props => props.theme.spacing[4]}px;
   width: ${props => props.theme.spacing[4]}px;
-`
-
-const StyledLink = styled.a`
-  font-weight: 700l
-  text-decoration: none;
-  color: ${props => props.theme.color.primary.main};
 `
 
 export default Home

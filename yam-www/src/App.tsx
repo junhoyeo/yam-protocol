@@ -21,6 +21,7 @@ import useModal from './hooks/useModal'
 import FAQ from './views/FAQ'
 import Farms from './views/Farms'
 import Home from './views/Home'
+import Page from './components/Page'
 
 import theme from './theme'
 
@@ -64,6 +65,11 @@ const Providers: React.FC = ({ children }) => {
         chainId={1}
         connectors={{
           walletconnect: { rpcUrl: 'https://mainnet.eth.aragon.network/' },
+          walletlink: {
+            url: 'https://test.com',
+            appName: 'Yam Finance',
+            appLogoUrl: 'https://yam.finance/static/media/farmer.85a01356.png',
+          },
         }}
       >
         <YamProvider>
